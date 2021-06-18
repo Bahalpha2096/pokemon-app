@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-class UserList extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+export default class UserList extends Component {
+  render() {
+    return <h1>This is my UserList page</h1>;
+  }
 }
-
-export default UserList;
