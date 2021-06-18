@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class PostList extends Component {
   constructor(props) {
@@ -22,8 +23,10 @@ export default class PostList extends Component {
     const postList = this.state.posts.map((posts, index) => {
       return (
         <div>
-          <li key={`${posts.id}-${index}`}>{posts.id}</li>
-          <li key={`${posts.name}-${index}`}>{posts.title}</li>
+       
+
+          <li key={`${posts.name}-${index}`}><Link to={`/posts/${posts.id}`}>{posts.title}
+          </Link></li>
 
         </div>
       );

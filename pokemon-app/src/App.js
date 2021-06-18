@@ -29,14 +29,13 @@ function App() {
           <Route path="/userlist">
             <UserList />
           </Route>
-          <Route path="/user">
+          <Route path="/user" component={User}>
             <User />
           </Route>
           <Route path="/postlist">
             <PostList />
           </Route>
-
-          <Post />
+          <Route exact path="/posts/:id" component={Post}></Route>
         </Switch>
       </main>
     </div>

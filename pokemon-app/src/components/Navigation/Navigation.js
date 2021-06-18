@@ -17,6 +17,9 @@ export default class Navigation extends Component {
             <Link to="/users">User</Link>
           </li>
           <li>
+            <Link to="/posts">posts</Link>
+          </li>
+          <li>
             <Link to="/postlist">Post</Link>
           </li>
           <li>
